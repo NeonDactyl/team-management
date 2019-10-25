@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'team-management';
+  title = 'Dev Team Management';
+  columnWidthPercent = 45;
 }
