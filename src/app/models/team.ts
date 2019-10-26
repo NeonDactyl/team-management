@@ -3,6 +3,7 @@ import { TeamMember } from './team-member';
 export class Team {
     id?: number;
     name: string;
+    expanded: boolean = false;
     members: TeamMember[] = [];
 
     constructor(name: string) {
@@ -15,5 +16,9 @@ export class Team {
 
     removeMember(member: TeamMember) {
         this.members = this.members.filter(m => m !== member);
+    }
+
+    toggleExpand() {
+        this.expanded = !this.expanded;
     }
 }
