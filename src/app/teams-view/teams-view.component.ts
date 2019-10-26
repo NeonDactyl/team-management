@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-teams-view',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./teams-view.component.scss']
 })
 export class TeamsViewComponent implements OnInit {
+
+  @Input() teams: Team[] = [];
 
   constructor() { }
 

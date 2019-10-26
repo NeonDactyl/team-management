@@ -11,7 +11,7 @@ import { TeamMember } from './models/team-member';
 export class AppComponent {
   title = 'Dev Team Management';
   columnWidthPercent = 45;
-  teams: Team[];
+  teams: Team[] = [];
 
   constructor() {}
 

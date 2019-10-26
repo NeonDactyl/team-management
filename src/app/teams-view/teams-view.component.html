@@ -1,3 +1,7 @@
 <div *ngFor="let team of teams">
     <h2>{{team.name}}</h2>
+    <ul></ul>
+        <li *ngFor="let member of team.members">
+        {{member.name}}
+        </li>
 </div>

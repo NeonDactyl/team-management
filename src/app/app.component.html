@@ -6,7 +6,7 @@
 
 <div class="container main-content" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="1%" fxLayoutAlign="center">
   <div fxFlex="{{columnWidthPercent}}%" class="app-main-box" id="teams">
-    <app-teams-view></app-teams-view>
+    <app-teams-view [teams]="teams"></app-teams-view>
   </div>
   <div fxFlex="{{columnWidthPercent}}%" class="app-main-box" id="detail">
     <app-detail-view></app-detail-view>
