@@ -7,10 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatCardModule, MatIconModule, MatToolbarModule, MatButtonModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { DetailViewComponent } from './detail-view/detail-view.component';
+import { TeamsViewComponent } from './teams-view/teams-view.component';
+import { TeamService } from './services/team.service'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DetailViewComponent,
+    TeamsViewComponent
   ],
   imports: [
     AppRoutingModule,
@@ -23,7 +28,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatInputModule,
     FlexLayoutModule
   ],
-  providers: [],
+  providers: [TeamService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
